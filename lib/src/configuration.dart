@@ -52,6 +52,7 @@ class Configuration {
   bool showPrompt = false;
   bool forceUpdateFromAnyVersion = false;
   bool store = false;
+  bool bundle = false;
   bool signMsix = true;
   bool installCert = true;
   bool buildWindows = true;
@@ -109,6 +110,8 @@ class Configuration {
     }
     store = _args.wasParsed('store') ||
         yaml['store']?.toString().toLowerCase() == 'true';
+    bundle = _args.wasParsed('bundle') ||
+        yaml['bundle']?.toString().toLowerCase() == 'true';
     createWithDebugBuildFiles = _args.wasParsed('debug') ||
         yaml['debug']?.toString().toLowerCase() == 'true';
 
@@ -418,6 +421,7 @@ class Configuration {
       ..addOption('build-windows')
       ..addOption('app-uri-handler-hosts')
       ..addFlag('store')
+      ..addFlag('bundle')
       ..addFlag('enable-at-startup')
       ..addFlag('debug')
       ..addFlag('release')
