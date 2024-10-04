@@ -3,6 +3,7 @@
 ## 3.16.8
 
 - update VCLibs files [#273](https://github.com/YehudaKremer/msix/pull/273)
+- fix [#254](https://github.com/YehudaKremer/msix/issues/254)
 
 ## 3.16.7
 
