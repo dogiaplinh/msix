@@ -1,5 +1,19 @@
 # Changelog
 
+## 3.18.0
+
+- Source the version-matched Visual C++ runtime from the VS redistributable [#326](https://github.com/YehudaKremer/msix/pull/326)
+
+## 3.17.0
+
+- Bump dependencies major versions
+- Add dependabot configuration [#322](https://github.com/YehudaKremer/msix/pull/322)
+- update documentation
+
+## 3.16.13
+
+- Update `get_it` version [#320](https://github.com/YehudaKremer/msix/pull/320)
+
 ## 3.16.12
 
 - add file/folder delete retry to avoid the exists() → delete() race
